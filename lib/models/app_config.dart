@@ -1,8 +1,8 @@
 class AppConfig {
-  final Flavor flavor;
+  Flavor flavor;
 
   AppConfig({
-    required this.flavor,
+    this.flavor = Flavor.prd,
   });
 }
 

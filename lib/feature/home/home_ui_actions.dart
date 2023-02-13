@@ -5,5 +5,5 @@ mixin HomeUiActions {
 
   HomeUseCases get read;
 
-  get watch;
+  HomePageState get watch;
 }

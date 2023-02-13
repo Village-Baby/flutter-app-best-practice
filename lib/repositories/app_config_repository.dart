@@ -1,5 +1,3 @@
-final appConfig = AppConfig();
+import 'package:best_practice/models/app_config.dart';
 
-class AppConfigRepository {
-  static init(){}
-}
+final appConfig = AppConfig();

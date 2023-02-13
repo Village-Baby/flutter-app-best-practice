@@ -1,3 +1,4 @@
+import 'package:best_practice/widgets/future_button.dart';
 import 'package:best_practice/feature/home/home_ui_actions.dart';
 import 'package:best_practice/feature/home/home_use_cases.dart';
 import 'package:flutter/material.dart';
@@ -37,18 +38,18 @@ class _HomePageState extends ConsumerState<HomePage> with HomeUiActions {
         Row(children: [
           const SizedBox(width: 16),
           Expanded(
-            child: CountButton(
-              onPressed: () {
-                read.increase();
+            child: FutureButton(
+              onPressed: () async {
+                await read.increase();
               },
               title: '증가',
             ),
           ),
           const SizedBox(width: 16),
           Expanded(
-            child: CountButton(
-              onPressed: () {
-                read.decrease();
+            child: FutureButton(
+              onPressed: () async {
+                await read.decrease();
               },
               title: '감소',
             ),
@@ -67,26 +68,4 @@ class _HomePageState extends ConsumerState<HomePage> with HomeUiActions {
 
   @override
   get watch => ref.watch(homeUseCases);
-}
-
-class CountButton extends StatelessWidget {
-  final String title;
-  final VoidCallback onPressed;
-
-  const CountButton({
-    Key? key,
-    required this.title,
-    required this.onPressed,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialButton(
-      onPressed: onPressed,
-      height: 48,
-      minWidth: double.infinity,
-      color: Colors.blue,
-      child: Text(title),
-    );
-  }
 }

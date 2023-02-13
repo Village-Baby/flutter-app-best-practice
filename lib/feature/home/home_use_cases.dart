@@ -8,7 +8,6 @@ final homeUseCases = StateNotifierProvider<HomeUseCases, HomePageState>((ref) =>
 class HomeUseCases extends StateNotifier<HomePageState> {
   final CountHistoryRepository countHistoryRepository;
   late HomeUiActions uiActions;
-  int count = 0;
 
   HomeUseCases({required this.countHistoryRepository})
       : super(HomePageState.none);
@@ -18,13 +17,15 @@ class HomeUseCases extends StateNotifier<HomePageState> {
   }
 
   increase() async {
-    await Future.delayed(const Duration(seconds: 1));
-    count++;
+    state = HomePageState.loading;
+    await countHistoryRepository.increase();
+    state = HomePageState.none;
   }
 
   decrease() async {
-    await Future.delayed(const Duration(seconds: 1));
-    count--;
+    state = HomePageState.loading;
+    await countHistoryRepository.decrease();
+    state = HomePageState.none;
   }
 
   complete() {
