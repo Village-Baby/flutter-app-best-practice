@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="654678af-77da-42e1-b209-27c33e009a9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/data/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/feature/error/error_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routers/router.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/typedefs/typedefs.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/feature/splash/splash_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/best_practices_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/best_practices_app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repositories/app_config_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repositories/app_config_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routers/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routers/router.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/daewook/Development/villagebaby/repo/flutter-app-best-practice/lib",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/daewook/Development/villagebaby/repo/flutter-app-best-practice/lib&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />

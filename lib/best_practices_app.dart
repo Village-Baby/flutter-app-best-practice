@@ -1,4 +1,5 @@
 import 'package:best_practice/feature/home/home_page.dart';
+import 'package:best_practice/feature/splash/splash_page.dart';
 import 'package:best_practice/routers/router.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class BestPracticeApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: HomePage.routeName,
+      initialRoute: SplashPage.routeName,
       onGenerateRoute: router,
     );
   }

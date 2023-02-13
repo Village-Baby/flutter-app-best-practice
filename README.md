@@ -14,5 +14,6 @@
     유저가 노출되는 화면.
 
 ## 2. Product Flavor
-## 3. Splash
-## 4. Test
+## 3. Splash.
+## 4. AppIcon.
+## 5. Test

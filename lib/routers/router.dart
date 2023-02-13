@@ -1,13 +1,17 @@
 import 'package:best_practice/feature/error/error_page.dart';
 import 'package:best_practice/feature/home/home_page.dart';
+import 'package:best_practice/feature/splash/splash_page.dart';
 import 'package:best_practice/typedefs/typedefs.dart';
 import 'package:flutter/material.dart';
 
 AppRouter router = (RouteSettings settings) {
   Widget ret;
   switch (settings.name) {
+    case SplashPage.routeName:
+      ret = _routeSplash(settings);
+      break;
     case HomePage.routeName:
-      ret = const HomePage();
+      ret = _routeHome(settings);
       break;
     case ErrorPage.routeName:
     default:
@@ -23,3 +27,12 @@ AppRouter router = (RouteSettings settings) {
     reverseTransitionDuration: Duration.zero,
   );
 };
+
+Widget _routeHome(RouteSettings settings) {
+  /// TODO
+  return const HomePage();
+}
+
+Widget _routeSplash(RouteSettings settings) {
+  return const SplashPage();
+}
