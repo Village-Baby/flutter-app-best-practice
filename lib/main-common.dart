@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:best_practice/best_practices_app.dart';
 import 'package:best_practice/models/app_config.dart';
+import 'package:best_practice/repositories/locale_repository.dart';
 import 'package:best_practice/resources/app_strings.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -14,14 +15,11 @@ void mainCommon({
   runZonedGuarded(() async {
     return runApp(ProviderScope(
       child: EasyLocalization(
-        supportedLocales: const [
-          Locale('en'),
-          Locale('ko'),
-        ],
+        supportedLocales: LocaleRepository.supportedLocales,
         useOnlyLangCode: true,
         useFallbackTranslations: true,
-        fallbackLocale: const Locale('ko'),
-        startLocale: const Locale('ko'),
+        fallbackLocale: LocaleRepository.korean,
+        startLocale: LocaleRepository.korean,
         path: AppStrings.resourcePath,
         child: BestPracticeApp(appConfig: appConfig),
       ),
