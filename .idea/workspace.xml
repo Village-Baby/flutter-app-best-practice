@@ -4,12 +4,34 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="654678af-77da-42e1-b209-27c33e009a9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/feature/splash/splash_page.dart" afterDir="false" />
+    <list default="true" id="654678af-77da-42e1-b209-27c33e009a9a" name="Changes" comment="&lt;head&gt;">
+      <change afterPath="$PROJECT_DIR$/assets/translations/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/translations/ko.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/data/local/app_id_services.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/data/shared_preferences_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/interfaces/data/local/app_id_services.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/repositories/locale_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/resources/app_colors.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/resources/app_images.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/resources/app_strings.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/best_practices_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/best_practices_app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routers/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routers/router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/remote/count_api_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/count_api_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/interfaces/data/remote/count_api_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/interfaces/data/remote/count_api_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main-common.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main-common.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main-dev.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main-dev.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main-prd.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main-prd.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/app_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/app_config.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repositories/app_config_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repositories/app_config_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/Flutter-Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/Flutter-Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,22 +67,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/daewook/Development/villagebaby/repo/flutter-app-best-practice/lib&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/Users/daewook/Development/villagebaby/repo/flutter-app-best-practice/assets/translations",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/translations" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/feature/settings" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/resources" />
       <recent name="$PROJECT_DIR$/lib/routers" />
       <recent name="$PROJECT_DIR$/lib/widgets" />
     </key>

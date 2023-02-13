@@ -1,8 +1,9 @@
 import 'package:best_practice/main-common.dart';
 import 'package:best_practice/models/app_config.dart';
-import 'package:best_practice/repositories/app_config_repository.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
-  appConfig.flavor = Flavor.dev;
-  mainCommon();
+  WidgetsFlutterBinding.ensureInitialized();
+
+  mainCommon(appConfig: AppConfig(flavor: Flavor.dev));
 }

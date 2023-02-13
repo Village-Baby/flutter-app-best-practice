@@ -1,5 +1,5 @@
 class AppConfig {
-  Flavor flavor;
+  final Flavor flavor;
 
   AppConfig({
     this.flavor = Flavor.prd,

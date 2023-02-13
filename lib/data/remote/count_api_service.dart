@@ -3,7 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final countApiService = Provider((ref) => _CountApiService());
 
-class _CountApiService extends CountApiService {
+class _CountApiService with CountApiService {
   @override
   Future<int> decrease(int count) async {
     await Future.delayed(const Duration(seconds: 1));
