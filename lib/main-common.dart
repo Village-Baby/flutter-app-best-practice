@@ -11,9 +11,12 @@ import 'dart:developer' as dev;
 
 void mainCommon({
   required AppConfig appConfig,
+  List<Override> mockProviders = const [],
 }) {
   runZonedGuarded(() async {
+    /// TODO firebase init, push init, dynamic link init and etc...
     return runApp(ProviderScope(
+      overrides: mockProviders,
       child: EasyLocalization(
         supportedLocales: LocaleRepository.supportedLocales,
         useOnlyLangCode: true,

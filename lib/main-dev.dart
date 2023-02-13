@@ -5,5 +5,8 @@ import 'package:flutter/widgets.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  mainCommon(appConfig: AppConfig(flavor: Flavor.dev));
+  mainCommon(
+    appConfig: AppConfig(flavor: Flavor.dev),
+    mockProviders: [],
+  );
 }
