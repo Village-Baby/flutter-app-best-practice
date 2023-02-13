@@ -5,26 +5,31 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 final countHistoryRepository = Provider<CountHistoryRepository>((ref) =>
     CountHistoryRepository(countApiService: ref.read(countApiService)));
 
-class CountHistoryRepository extends StateNotifier<List<int>> {
+class CountHistoryRepository {
   final CountApiService countApiService;
 
-  CountHistoryRepository({required this.countApiService}) : super([]);
+  CountHistoryRepository({required this.countApiService}) : super();
+
+  List<int> countHistory = [];
 
   increase() async {
-    if (state.isEmpty) {
-      state.add(0);
+    if (countHistory.isEmpty) {
+      countHistory.add(0);
     } else {
-      int current = state[state.length - 1];
-      state.add(await countApiService.increase(current++));
+      int current = countHistory[countHistory.length - 1];
+      countHistory.add(await countApiService.increase(current++));
     }
   }
 
   decrease() async {
-    if (state.isEmpty) {
-      state.add(0);
+    if (countHistory.isEmpty) {
+      countHistory.add(0);
     } else {
-      int current = state[state.length - 1];
-      state.add(await countApiService.decrease(current--));
+      int current = countHistory[countHistory.length - 1];
+      countHistory.add(await countApiService.decrease(current--));
     }
   }
+
+  int? get current =>
+      countHistory.isEmpty ? null : countHistory[countHistory.length - 1];
 }

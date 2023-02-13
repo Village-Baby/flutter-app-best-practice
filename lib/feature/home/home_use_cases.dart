@@ -2,15 +2,14 @@ import 'package:best_practice/feature/home/home_ui_actions.dart';
 import 'package:best_practice/repositories/count_history_repository.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-final homeUseCases = StateNotifierProvider<HomeUseCases, HomePageState>((ref) =>
-    HomeUseCases(countHistoryRepository: ref.read(countHistoryRepository)));
+final homeUseCases = StateNotifierProvider<HomeUseCases, HomePageState>(
+    (ref) => HomeUseCases(repository: ref.read(countHistoryRepository)));
 
 class HomeUseCases extends StateNotifier<HomePageState> {
-  final CountHistoryRepository countHistoryRepository;
+  final CountHistoryRepository repository;
   late HomeUiActions uiActions;
 
-  HomeUseCases({required this.countHistoryRepository})
-      : super(HomePageState.none);
+  HomeUseCases({required this.repository}) : super(HomePageState.none);
 
   init(HomeUiActions uiActions) {
     this.uiActions = uiActions;
@@ -18,19 +17,21 @@ class HomeUseCases extends StateNotifier<HomePageState> {
 
   increase() async {
     state = HomePageState.loading;
-    await countHistoryRepository.increase();
+    await repository.increase();
     state = HomePageState.none;
   }
 
   decrease() async {
     state = HomePageState.loading;
-    await countHistoryRepository.decrease();
+    await repository.decrease();
     state = HomePageState.none;
   }
 
   complete() {
     uiActions.goSettings();
   }
+
+  int? get count => repository.current;
 }
 
 enum HomePageState {

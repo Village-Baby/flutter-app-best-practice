@@ -31,6 +31,11 @@ class _HomePageState extends ConsumerState<HomePage> with HomeUiActions {
     return Scaffold(
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Text(
+          '${read.count}',
+          style: TextStyle(color: Colors.grey.shade900, fontSize: 32),
+        ),
+        const SizedBox(height: 16),
+        Text(
           '$watch',
           style: TextStyle(color: Colors.grey.shade900, fontSize: 24),
         ),
