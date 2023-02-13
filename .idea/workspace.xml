@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="654678af-77da-42e1-b209-27c33e009a9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/data/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/feature/error/error_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routers/router.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/typedefs/typedefs.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/feature/home/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/feature/home/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/feature/home/home_use_cases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/feature/home/home_use_cases.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/feature/settings/settings_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/feature/count_history/settings_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/feature/settings/settings_ui_actions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/feature/count_history/settings_ui_actions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/feature/settings/settings_use_cases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/feature/count_history/settings_use_cases.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repositories/count_history_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repositories/count_history_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/best_practices_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/best_practices_app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repositories/app_config_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repositories/app_config_repository.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,7 @@
       <recent name="$PROJECT_DIR$/lib/feature/settings" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/routers" />
       <recent name="$PROJECT_DIR$/lib/widgets" />
     </key>
   </component>
