@@ -47,6 +47,8 @@ dependencies:
   # create unique id for app or device id
   uuid: ^3.0.7
 
+  after_layout: ^1.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -81,12 +83,12 @@ flavorizr:
         name: 'Baby Billy'
 
       android:
-        applicationId: "kr.villagebaby.billyapplication"
+        applicationId: 'example.best.practice'
 #        firebase:
 #          config: '.firebase/prd/google-services.json'
 
       ios:
-        bundleId: "kr.villagebaby.billyapplication"
+        bundleId: 'example.best.practice'
 #        firebase:
 #          config: '.firebase/prd/GoogleService-Info.plist'
 
@@ -95,11 +97,11 @@ flavorizr:
         name: '(STG)Baby Billy'
 
       android:
-        applicationId: "kr.villagebaby.billyapplication.stg"
+        applicationId: 'example.best.practice.stg'
 #        firebase:
 #          config: '.firebase/stg/google-services.json'
       ios:
-        bundleId: "kr.villagebaby.billyapplication.stg"
+        bundleId: 'example.best.practice.stg'
 #        firebase:
 #          config: '.firebase/stg/GoogleService-Info.plist'
 

@@ -33,12 +33,12 @@ android {
     productFlavors {
         prd {
             dimension "flavor-type"
-            applicationId "kr.villagebaby.billyapplication"
+            applicationId "example.best.practice"
             resValue "string", "app_name", "Baby Billy"
         }
         dev {
             dimension "flavor-type"
-            applicationId "kr.villagebaby.billyapplication.stg"
+            applicationId "example.best.practice.stg"
             resValue "string", "app_name", "(STG)Baby Billy"
         }
     }

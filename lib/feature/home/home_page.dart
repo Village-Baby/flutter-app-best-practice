@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:after_layout/after_layout.dart';
 import 'package:best_practice/widgets/future_button.dart';
 import 'package:best_practice/feature/home/home_ui_actions.dart';
 import 'package:best_practice/feature/home/home_use_cases.dart';
@@ -19,12 +22,8 @@ class HomePage extends StatefulHookConsumerWidget {
   }
 }
 
-class _HomePageState extends ConsumerState<HomePage> with HomeUiActions {
-  @override
-  void initState() {
-    read.init(this);
-    super.initState();
-  }
+class _HomePageState extends ConsumerState<HomePage>
+    with HomeUiActions, AfterLayoutMixin<HomePage> {
 
   @override
   Widget build(BuildContext context) {
@@ -73,4 +72,9 @@ class _HomePageState extends ConsumerState<HomePage> with HomeUiActions {
 
   @override
   get watch => ref.watch(homeUseCases);
+
+  @override
+  FutureOr<void> afterFirstLayout(BuildContext context) {
+    read.init(this);
+  }
 }
