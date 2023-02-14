@@ -57,6 +57,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  flutter_flavorizr: ^2.1.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -72,3 +73,33 @@ flutter:
   assets:
     - assets/images/
     - assets/translations/
+
+flavorizr:
+  flavors:
+    prd:
+      app:
+        name: 'Baby Billy'
+
+      android:
+        applicationId: "kr.villagebaby.billyapplication"
+#        firebase:
+#          config: '.firebase/prd/google-services.json'
+
+      ios:
+        bundleId: "kr.villagebaby.billyapplication"
+#        firebase:
+#          config: '.firebase/prd/GoogleService-Info.plist'
+
+    dev:
+      app:
+        name: '(STG)Baby Billy'
+
+      android:
+        applicationId: "kr.villagebaby.billyapplication.stg"
+#        firebase:
+#          config: '.firebase/stg/google-services.json'
+      ios:
+        bundleId: "kr.villagebaby.billyapplication.stg"
+#        firebase:
+#          config: '.firebase/stg/GoogleService-Info.plist'
+
